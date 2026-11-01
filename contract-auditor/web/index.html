@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f5f1"><title>ClearClause — Document Auditor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">C</span><span>clear<span class="brand-light">clause</span></span></a><div class="top-meta"><span class="status-dot"></span> Private workspace <span class="divider"></span><span class="avatar">CC</span></div></header>
+  <main class="shell">
+    <section class="intro"><div class="eyebrow"><span class="eyebrow-line"></span> CONTRACT INTELLIGENCE</div><h1>Know what you’re<br><span>agreeing to.</span></h1><p class="subhead">A clear-eyed review of the fine print. Surface unusual terms, understand the trade-offs, and know what to ask for.</p></section>
+    <section class="upload-card" id="dropzone"><div class="upload-copy"><div class="upload-icon">↑</div><div><h2>Start with a document</h2><p>Drop a contract or policy here, or <label for="file-input" class="browse">browse files</label></p></div></div><div class="upload-side"><span class="file-types">PDF · DOCX · TXT</span><label class="button primary" for="file-input">Choose a file <span>↗</span></label><input id="file-input" type="file" accept=".pdf,.docx,.txt,.md"></div><div class="drop-overlay">Drop your document to begin</div></section>
+    <section id="progress" class="progress-card hidden"><div class="spinner"></div><div><strong id="progress-title">Preparing your review…</strong><p id="progress-copy">Your file is being processed securely in this workspace.</p></div></section>
+    <section id="error" class="error hidden"></section>
+    <section id="report" class="hidden">
+      <div class="report-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> REVIEW REPORT</div><h2 id="report-filename">Document review</h2></div><button id="new-review" class="button secondary">＋ New review</button></div>
+      <div class="overview-grid"><article class="score-card"><div class="card-kicker">REVIEW ATTENTION</div><div class="score-wrap"><div class="score-ring" id="score-ring"><span id="score">—</span></div><div><strong id="score-label">Overall score</strong><p>Higher scores mean more items<br>deserve a closer look.</p></div></div><div class="score-legend"><span><i class="green"></i>0–34 Low</span><span><i class="yellow"></i>35–64 Moderate</span><span><i class="red"></i>65–100 Elevated</span></div></article>
+        <article class="summary-card"><div class="card-kicker">EXECUTIVE SUMMARY</div><p id="summary-text">Your findings will appear here.</p><div class="summary-foot"><span class="flag-icon">!</span><span><b id="flag-count">0</b> high-priority items to review</span></div></article>
+      </div>
+      <div class="clauses-header"><div><div class="eyebrow"><span class="eyebrow-line"></span> CLAUSE-BY-CLAUSE</div><h2>What stood out</h2></div><div id="filter-pills" class="filters"><button class="filter active" data-filter="all">All clauses</button><button class="filter" data-filter="flagged">Flagged only</button></div></div>
+      <div id="clauses" class="clauses"></div>
+      <p class="disclaimer">ClearClause is an informational screening tool, not legal advice. Findings can miss context or contain errors. Consult a qualified lawyer before making decisions.</p>
+    </section>
+    <section id="history-wrap" class="history-wrap"><div class="history-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR WORKSPACE</div><h2>Recent reviews</h2></div><button id="refresh" class="text-button">Refresh ↻</button></div><div id="history" class="history"><div class="history-empty">Your recent document reviews will show up here.</div></div></section>
+    <footer><span>ClearClause <span class="footer-dot">·</span> Contract intelligence for everyone</span><span>Built for a better first read.</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body></html>

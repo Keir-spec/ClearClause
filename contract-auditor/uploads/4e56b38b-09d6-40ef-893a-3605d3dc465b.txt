@@ -1,0 +1,11 @@
+Example SaaS Terms of Service
+
+1. Customer Data. The provider may sell, share, and use customer and personal data for any purpose, including advertising, product development, and commercial partnerships.
+
+2. Limitation of Liability. In no event shall the provider have any limitation of liability for any direct, indirect, incidental, or consequential damages.
+
+3. Renewal. This subscription automatically renews for successive one-year terms unless the customer gives written notice of cancellation at least 90 days before the renewal date.
+
+4. Termination. The provider may terminate this agreement at any time, for any reason, without notice. Fees paid are non-refundable.
+
+5. Governing Terms. The parties will work together in good faith to resolve ordinary service questions.
